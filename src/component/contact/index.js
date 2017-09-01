@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import * as util from '../../lib/util.js';
 import * as route from '../../actions/route.js';
 
+import Navbar from '../navbar';
 import Navbutton from '../navbutton';
 
 class Contact extends React.Component {
@@ -19,6 +20,7 @@ class Contact extends React.Component {
   render() {
     return (
       <section className='contact-page'>
+        <Navbar />
         <h1> Want to Hire Me? </h1>
         <p> katy@katysewall.com </p>
         <p> 206.457.7205 </p>

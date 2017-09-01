@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import * as util from '../../lib/util.js';
 import * as route from '../../actions/route.js';
 
+import Navbar from '../navbar';
 import Navbutton from '../navbutton';
 
 class Work extends React.Component {
@@ -19,6 +20,7 @@ class Work extends React.Component {
   render() {
     return (
       <section className='work-page'>
+        <Navbar />
         <h2> Podcast Host & Consultant </h2>
         <hr/>
         <p> Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. </p>
