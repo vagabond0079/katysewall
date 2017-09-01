@@ -3,6 +3,8 @@ import {connect} from 'react-redux';
 import * as util from '../../lib/util.js';
 import Navbutton from '../navbutton';
 
+import * as route from '../../actions/route.js';
+
 class Navbar extends React.Component {
   constructor(props){
     super(props);
@@ -19,7 +21,7 @@ class Navbar extends React.Component {
       <nav className='navbar'>
         <Navbutton
           buttonText='Work'
-          handleClick={this.handleClick}
+          handleClick={this.props.goToWork}
         />
         <Navbutton
           buttonText='About'
@@ -29,14 +31,18 @@ class Navbar extends React.Component {
           buttonText='Contact'
           handleClick={this.handleClick}
         />
-    </nav>
+      </nav>
     );
   }
 }
 
 let mapStateToProps = (state) => ({});
 
-let mapDispatchToProps = (dispatch) => ({});
+let mapDispatchToProps = (dispatch) => ({
+  goToWork: () => dispatch(route.switchRoute('/work')),
+  goToAbout: () => dispatch(route.switchRoute('/about')),
+  goToContact: () => dispatch(route.switchRoute('/contact')),
+});
 
 export default connect(
   mapStateToProps,
