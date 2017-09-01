@@ -25,7 +25,7 @@ class Navbar extends React.Component {
         />
         <Navbutton
           buttonText='About'
-          handleClick={this.handleClick}
+          handleClick={this.props.goToAbout}
         />
         <Navbutton
           buttonText='Contact'
