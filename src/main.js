@@ -1,5 +1,13 @@
+import './style/main.scss';
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDom from 'react-dom';
 import App from './component/app';
+import {Provider} from 'react-redux';
+import storeCreate from './lib/app-store-create';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+let AppContainer = () =>
+  <Provider store={storeCreate()}>
+    <App />
+  </Provider>;
+
+ReactDom.render(<AppContainer />, document.getElementById('root'));

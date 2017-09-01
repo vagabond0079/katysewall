@@ -1,26 +1,39 @@
 import React from 'react';
-import {Provider} from 'react-redux';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {connect} from 'react-redux';
+import {history} from 'react-router-dom';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
-import appStoreCreate from '../../lib/app-store-create.js';
 import Landing from '../landing';
-
-const store = appStoreCreate();
+import Work from '../work';
+// import About from '../about';
+// import Contact from '../contact';
 
 class App extends React.Component{
+
+  componentDidMount(){
+    history.push(this.props.route);
+  }
+
   render(){
     return(
       <div className='app'>
-        <Provider store={store}>
-          <BrowserRouter>
-            <main>
-              <Route exact path='/' component={Landing}></Route>
-            </main>
-          </BrowserRouter>
-        </Provider>
+        <BrowserRouter basename='/'>
+          <Switch location={{ pathname: this.props.route }}>
+            <Route exact path='/' component={Landing}></Route>
+            <Route exact path='/work' component={Work}></Route>
+          </Switch>
+        </BrowserRouter>
       </div>
     );
   }
 }
 
-export default App;
+let mapStateToProps = state => ({
+  route: state.route,
+});
+
+let mapDispatchToProps = dispatch => ({});
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
+// <Route exact path='/about' component={About}></Route>
+// <Route exact path='/contact' component={Contact}></Route>
