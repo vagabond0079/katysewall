@@ -2,15 +2,14 @@ mock-profile.js
 mock-tool.js
 mock-transaction.js
 
-profile-test.js
-tool-test.js
-transaction-test.js
+*-test.js
 
 db/
 build/
 .env
 .test.env
 .nyc.output
+*.sketch
 
 ### OSX ###
 .DS_Store

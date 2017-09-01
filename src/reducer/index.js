@@ -1,4 +1,4 @@
 import {combineReducers} from 'redux';
-import years from './years.js';
+import route from './route.js';
 
-export default combineReducers({years});
+export default combineReducers({route});
