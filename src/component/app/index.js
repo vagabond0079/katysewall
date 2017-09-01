@@ -6,7 +6,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Landing from '../landing';
 import Work from '../work';
 import About from '../about';
-// import Contact from '../contact';
+import Contact from '../contact';
 
 class App extends React.Component{
 
@@ -18,6 +18,7 @@ class App extends React.Component{
             <Route exact path='/' component={Landing}></Route>
             <Route path='/work' component={Work}></Route>
             <Route path='/about' component={About}></Route>
+            <Route path='/contact' component={Contact}></Route>
           </Switch>
         </BrowserRouter>
       </div>
@@ -32,5 +33,3 @@ let mapStateToProps = state => ({
 let mapDispatchToProps = dispatch => ({});
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
-// <Route exact path='/about' component={About}></Route>
-// <Route exact path='/contact' component={Contact}></Route>

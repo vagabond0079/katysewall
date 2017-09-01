@@ -29,7 +29,7 @@ class Navbar extends React.Component {
         />
         <Navbutton
           buttonText='Contact'
-          handleClick={this.handleClick}
+          handleClick={this.props.goToContact}
         />
       </nav>
     );
