@@ -8,8 +8,16 @@ class Landing extends React.Component {
   render() {
     return (
       <div className='landing'>
-        <h2> landing </h2>
         <Navbar />
+        <div className='name-block'>
+          <h1> Katy Sewall </h1>
+        </div>
+        <div className='title-block'>
+          <h2> Podcast Consultant </h2>
+          <h2> Radio Producer </h2>
+          <h2> Freelance Writer </h2>
+          <h2> Host and Moderator </h2>
+        </div>
       </div>
     );
   }

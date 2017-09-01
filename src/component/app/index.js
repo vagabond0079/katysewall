@@ -14,7 +14,6 @@ class App extends React.Component{
         <Provider store={store}>
           <BrowserRouter>
             <main>
-              <h1>It works.</h1>
               <Route exact path='/' component={Landing}></Route>
             </main>
           </BrowserRouter>

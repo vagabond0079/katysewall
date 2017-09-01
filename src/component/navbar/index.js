@@ -16,13 +16,20 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <div className='navbar'>
-        <nav> navbar </nav>
+      <nav className='navbar'>
         <Navbutton
-          buttonText='Navbutton #1'
+          buttonText='Work'
           handleClick={this.handleClick}
         />
-      </div>
+        <Navbutton
+          buttonText='About'
+          handleClick={this.handleClick}
+        />
+        <Navbutton
+          buttonText='Contact'
+          handleClick={this.handleClick}
+        />
+    </nav>
     );
   }
 }
