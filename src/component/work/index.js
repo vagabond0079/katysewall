@@ -1,8 +1,20 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import * as util from '../../lib/util.js';
+import * as route from '../../actions/route.js';
+
+import Navbutton from '../navbutton';
 
 class Work extends React.Component {
+  constructor(props){
+    super(props);
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(event){
+    this.props.goToHome();
+  }
 
   render() {
     return (
@@ -19,6 +31,10 @@ class Work extends React.Component {
         <h2> Host & Moderator </h2>
         <hr/>
         <p> Celery potato scallion desert raisin horseradish spinach carrot soko.  </p>
+        <Navbutton
+          buttonText='Home'
+          handleClick={this.handleClick}
+        />
       </section>
     );
   }
@@ -26,7 +42,9 @@ class Work extends React.Component {
 
 let mapStateToProps = (state) => ({});
 
-let mapDispatchToProps = (dispatch) => ({});
+let mapDispatchToProps = (dispatch) => ({
+  goToHome: () => dispatch(route.switchRoute('/')),
+});
 
 export default connect(
   mapStateToProps,

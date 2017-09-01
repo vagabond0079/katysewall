@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import {history} from 'react-router-dom';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 import Landing from '../landing';
@@ -8,6 +9,11 @@ import Work from '../work';
 // import Contact from '../contact';
 
 class App extends React.Component{
+
+  componentDidMount(){
+    history.push(this.props.route);
+  }
+
   render(){
     return(
       <div className='app'>

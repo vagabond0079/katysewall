@@ -2,7 +2,11 @@ import React from 'react';
 import {connect} from 'react-redux';
 import * as util from '../../lib/util.js';
 
+
 class Navbutton extends React.Component {
+  constructor(props){
+    super(props);
+  }
 
   render() {
     return (
@@ -14,7 +18,9 @@ class Navbutton extends React.Component {
   }
 }
 
-let mapStateToProps = (state) => ({});
+let mapStateToProps = (state) => ({
+  route: state.route,
+});
 
 let mapDispatchToProps = (dispatch) => ({});
 
