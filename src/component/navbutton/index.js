@@ -6,9 +6,10 @@ class Navbutton extends React.Component {
 
   render() {
     return (
-      <div className='navbutton'>
-        <button> {this.props.buttonText} </button>
-      </div>
+      <button
+        className='navbutton'
+        onClick={this.props.handleClick}
+      > {this.props.buttonText} </button>
     );
   }
 }

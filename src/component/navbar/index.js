@@ -4,6 +4,15 @@ import * as util from '../../lib/util.js';
 import Navbutton from '../navbutton';
 
 class Navbar extends React.Component {
+  constructor(props){
+    super(props);
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(event){
+    console.log('handleClick');
+  }
 
   render() {
     return (
@@ -11,6 +20,7 @@ class Navbar extends React.Component {
         <nav> navbar </nav>
         <Navbutton
           buttonText='Navbutton #1'
+          handleClick={this.handleClick}
         />
       </div>
     );
