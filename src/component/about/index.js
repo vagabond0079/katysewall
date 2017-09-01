@@ -4,6 +4,7 @@ import * as util from '../../lib/util.js';
 import * as route from '../../actions/route.js';
 import katyProfilePic from '../../assets/katy-profile-pic.jpg';
 
+import Navbar from '../navbar';
 import Navbutton from '../navbutton';
 
 class About extends React.Component {
@@ -20,6 +21,7 @@ class About extends React.Component {
   render() {
     return (
       <section className='about-page'>
+        <Navbar />
         <h1> About Katy </h1>
         <img src={katyProfilePic}/>
         <p>
