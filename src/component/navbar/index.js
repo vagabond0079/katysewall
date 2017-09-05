@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import * as util from '../../lib/util.js';
 import Navbutton from '../navbutton';
+import './navbar.scss';
 
 import * as route from '../../actions/route.js';
 

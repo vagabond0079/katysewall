@@ -1,1 +1,6 @@
 @import '../../style/_vars.scss';
+
+.navbar {
+  background-color: $color-background;
+  border: 1px, solid, $color-grey;
+}

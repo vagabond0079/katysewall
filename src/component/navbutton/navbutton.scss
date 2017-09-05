@@ -1,0 +1,8 @@
+@import '../../style/_vars.scss';
+
+.navbutton {
+  width: calc(100%/3);
+  height: 10vh;
+  display: inline;
+  opacity: 0.6;
+}
