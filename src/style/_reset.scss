@@ -1,5 +1,8 @@
 @import './_vars.scss';
 
+html {
+  font-size: 62.5%;
+}
 * {
   // box model
   position: static;
@@ -21,7 +24,7 @@
 
   // color
   background: none;
-  
+
   // other
   list-style: none;
 }

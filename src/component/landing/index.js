@@ -11,6 +11,7 @@ class Landing extends React.Component {
     return (
       <section className='landing'>
         <Navbar />
+        <div className='name-block-buffer-top'></div>
         <div className='name-block'>
           <h1> Katy Sewall </h1>
         </div>

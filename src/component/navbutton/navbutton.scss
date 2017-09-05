@@ -1,8 +1,9 @@
 @import '../../style/_vars.scss';
 
 .navbutton {
+  display: inline;
   width: calc(100%/3);
   height: 10vh;
-  display: inline;
+  font-size: 2em;
   opacity: 0.6;
 }
