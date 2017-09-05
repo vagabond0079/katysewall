@@ -11,7 +11,7 @@
 
 body {
   height: 100vh;
-  @include background('../../assets/174850543.jpg', -70vh 0);
+  @include background('../../assets/174850543.jpg', -75vh 0);
 }
 
 .name-block {
@@ -25,9 +25,30 @@ body {
     font-size: 9.6em;
     padding-left: 20vw;
     padding-top: 5vw;
+    text-shadow: 1px 2px 1px $color-border;
   }
 }
 
 .name-block-buffer-top {
+  height: 18vh;
+}
+
+.title-block {
+  width: 60vw;
+  background-color: $color-background;
+  border: 1px solid $color-grey;
+  padding: $pad;
+  float: right;
+  margin-top: 5vh;
+  margin-right: 5vw;
+
+  h4{
+    font-size: 1.8em;
+    opacity: 0.6;
+    padding: 0.3em;
+  }
+}
+
+.title-block-buffer-top {
   height: 18vh;
 }
