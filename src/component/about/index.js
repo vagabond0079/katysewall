@@ -20,7 +20,7 @@ class About extends React.Component {
 
   render() {
     return (
-      <section className='about-page'>
+      <section id='about-page'>
         <Navbar />
         <h1> About Katy </h1>
         <img src={katyProfilePic}/>

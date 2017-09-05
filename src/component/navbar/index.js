@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import * as util from '../../lib/util.js';
 import Navbutton from '../navbutton';
+import './navbar.scss';
 
 import * as route from '../../actions/route.js';
 
@@ -9,11 +10,27 @@ class Navbar extends React.Component {
   constructor(props){
     super(props);
 
-    this.handleClick = this.handleClick.bind(this);
+    this.handleWorkClick = this.handleWorkClick.bind(this);
+    this.handleAboutClick = this.handleAboutClick.bind(this);
+    this.handleContactClick = this.handleContactClick.bind(this);
   }
 
-  handleClick(event){
+  handleWorkClick(event){
     console.log('handleClick');
+    let el = document.getElementById('work-page');
+    el.scrollIntoView();
+  }
+
+  handleAboutClick(event){
+    console.log('handleClick');
+    let el = document.getElementById('about-page');
+    el.scrollIntoView();
+  }
+
+  handleContactClick(event){
+    console.log('handleClick');
+    let el = document.getElementById('contact-page');
+    el.scrollIntoView();
   }
 
   render() {
@@ -21,15 +38,15 @@ class Navbar extends React.Component {
       <nav className='navbar'>
         <Navbutton
           buttonText='Work'
-          handleClick={this.props.goToWork}
+          handleClick={this.handleWorkClick}
         />
         <Navbutton
           buttonText='About'
-          handleClick={this.props.goToAbout}
+          handleClick={this.handleAboutClick}
         />
         <Navbutton
           buttonText='Contact'
-          handleClick={this.props.goToContact}
+          handleClick={this.handleContactClick}
         />
       </nav>
     );

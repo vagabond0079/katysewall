@@ -19,7 +19,7 @@ class Contact extends React.Component {
 
   render() {
     return (
-      <section className='contact-page'>
+      <section id='contact-page'>
         <Navbar />
         <h1> Want to Hire Me? </h1>
         <p> katy@katysewall.com </p>

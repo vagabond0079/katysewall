@@ -1,0 +1,54 @@
+@import '../../style/_vars.scss';
+
+@mixin background($imgpath, $position:0 0, $size: cover, $repeat: no-repeat) {
+    background: {
+        image: url($imgpath);
+        position: $position;
+        size: $size;
+        repeat: $repeat;
+    }
+}
+
+.landing {
+  height: 100vh;
+  @include background('../../assets/174850543.jpg', -75vh 0);
+}
+
+.name-block {
+  height: 40vh;
+  background-color: $color-background;
+  border-top: 1px solid $color-grey;
+  border-bottom: 1px solid $color-grey;
+
+  h1 {
+    font-family: 'TallDeco';
+    font-size: 16vh;
+    padding-left: 20vw;
+    padding-top: 5vw;
+    text-shadow: 1px 2px 1px $color-border;
+  }
+}
+
+.name-block-buffer-top {
+  height: 18vh;
+}
+
+.title-block {
+  width: 60vw;
+  background-color: $color-background;
+  border: 1px solid $color-grey;
+  padding: $pad;
+  float: right;
+  margin-top: 5vh;
+  margin-right: 5vw;
+
+  h4{
+    font-size: 1.8em;
+    opacity: 0.6;
+    padding: 0.3em;
+  }
+}
+
+.title-block-buffer-top {
+  height: 18vh;
+}

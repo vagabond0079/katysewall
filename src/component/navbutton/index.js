@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import * as util from '../../lib/util.js';
+import './navbutton.scss';
 
 
 class Navbutton extends React.Component {
