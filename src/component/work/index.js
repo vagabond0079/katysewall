@@ -19,7 +19,7 @@ class Work extends React.Component {
 
   render() {
     return (
-      <section className='work-page'>
+      <section id='work-page'>
         <Navbar />
         <h2> Podcast Host & Consultant </h2>
         <hr/>
