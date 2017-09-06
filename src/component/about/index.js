@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import * as util from '../../lib/util.js';
 import * as route from '../../actions/route.js';
+import './about.scss';
 import katyProfilePic from '../../assets/katy-profile-pic.jpg';
 
 import Navbar from '../navbar';
@@ -21,8 +22,9 @@ class About extends React.Component {
   render() {
     return (
       <section id='about-page'>
-        <Navbar />
+        <div id='about-page-buffer-top'></div>
         <h1> About Katy </h1>
+        <hr/>
         <img src={katyProfilePic}/>
         <p>
           Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jÃ­cama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. Gumbo kakadu plum komatsuna black-eyed pea green bean zucchini gourd winter purslane silver beet rock melon radish asparagus spinach.

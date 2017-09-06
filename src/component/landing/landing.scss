@@ -1,20 +1,11 @@
 @import '../../style/_vars.scss';
 
-@mixin background($imgpath, $position:0 0, $size: cover, $repeat: no-repeat) {
-    background: {
-        image: url($imgpath);
-        position: $position;
-        size: $size;
-        repeat: $repeat;
-    }
-}
-
-.landing {
+#landing {
   height: 100vh;
   @include background('../../assets/174850543.jpg', -75vh 0);
 }
 
-.name-block {
+#name-block {
   height: 40vh;
   background-color: $color-background;
   border-top: 1px solid $color-grey;
@@ -29,15 +20,15 @@
   }
 }
 
-.name-block-buffer-top {
-  height: 18vh;
+#name-block-buffer-top {
+  height: 28vh;
 }
 
-.title-block {
+#title-block {
   width: 60vw;
   background-color: $color-background;
   border: 1px solid $color-grey;
-  padding: $pad;
+  padding: $pad * 0.5;
   float: right;
   margin-top: 5vh;
   margin-right: 5vw;
@@ -49,6 +40,6 @@
   }
 }
 
-.title-block-buffer-top {
+#title-block-buffer-top {
   height: 18vh;
 }

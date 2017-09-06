@@ -20,7 +20,6 @@ class Contact extends React.Component {
   render() {
     return (
       <section id='contact-page'>
-        <Navbar />
         <h1> Want to Hire Me? </h1>
         <p> katy@katysewall.com </p>
         <p> 206.457.7205 </p>
