@@ -11,7 +11,19 @@ $color-black: #000;
 $color-grey: #979797;
 // $color-darkgrey: ;
 
-$pad: 0.5em;
+$pad: 1em;
 
 $font-headline: 'TallDeco', monospace;
-$font-primary: 'EastMarket', sans-serif;
+$font-menu: 'EastMarket', sans-serif;
+$font-paragraph: 'Gill Sans', sans-serif;
+
+//***** mixins *****
+
+@mixin background($imgpath, $position:0 0, $size: cover, $repeat: no-repeat) {
+    background: {
+        image: url($imgpath);
+        position: $position;
+        size: $size;
+        repeat: $repeat;
+    }
+}

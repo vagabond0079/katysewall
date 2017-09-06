@@ -1,6 +1,7 @@
 @import '../../style/_vars.scss';
 
 .navbutton {
+  font-family: $font-menu;
   display: inline;
   width: calc(100%/3);
   height: 10vh;

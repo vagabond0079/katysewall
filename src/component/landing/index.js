@@ -13,13 +13,13 @@ class Landing extends React.Component {
   render() {
     return (
       <main>
-        <section className='landing'>
+        <section id='landing'>
           <Navbar />
-          <div className='name-block-buffer-top'></div>
-          <div className='name-block'>
+          <div id='name-block-buffer-top'></div>
+          <div id='name-block'>
             <h1> Katy Sewall </h1>
           </div>
-          <div className='title-block'>
+          <div id='title-block'>
             <h4> Podcast Consultant </h4>
             <h4> Radio Producer </h4>
             <h4> Freelance Writer </h4>

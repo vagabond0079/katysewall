@@ -18,19 +18,19 @@ class Navbar extends React.Component {
   handleWorkClick(event){
     console.log('handleClick');
     let el = document.getElementById('work-page');
-    el.scrollIntoView();
+    el.scrollIntoView(true);
   }
 
   handleAboutClick(event){
     console.log('handleClick');
     let el = document.getElementById('about-page');
-    el.scrollIntoView();
+    el.scrollIntoView(true);
   }
 
   handleContactClick(event){
     console.log('handleClick');
     let el = document.getElementById('contact-page');
-    el.scrollIntoView();
+    el.scrollIntoView(true);
   }
 
   render() {
