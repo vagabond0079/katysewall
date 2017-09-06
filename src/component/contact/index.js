@@ -21,6 +21,33 @@ class Contact extends React.Component {
           <p> katy@katysewall.com </p>
           <p> 206.457.7205 </p>
         </div>
+        <ul className="soc">
+          <li>
+            <a href='https://facebook.com/katysewall'>
+              <i className="socicon-facebook" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href='https://soundcloud.com/katysewall'>
+              <i className="socicon-soundcloud" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href='https://twitter.com/KatySewall'>
+              <i className="socicon-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li className='socicon-hidden' >
+            <a href='https://instagram.com/katysewall'>
+              <i className="socicon-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li className='socicon-hidden' >
+            <a href='https://linkedin.com/katysewall'>
+              <i className="socicon-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
       </section>
     );
   }

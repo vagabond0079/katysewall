@@ -2,6 +2,8 @@
 
 #contact-page {
   height: 100vh;
+  position: relative;
+  text-align: center;
 
   #contact-page-buffer-top{
     height: 10vh;
@@ -12,6 +14,7 @@
     padding-left: 20vw;
     padding-right: 30vw;
     padding-top: 5vw;
+    text-align: left;
     text-shadow: 1px 2px 1px $color-border;
   }
 
@@ -31,10 +34,40 @@
     margin-top: 5vh;
     margin-right: 10vw;
     float: right;
+    text-align: left;
   }
 
-  .navbutton {
-    width: 100%;
-    margin-top: -10vh;
+  ul {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100vw;
+    height: 15vh;
+    clear: both;
+
+    li {
+      margin: 0 auto;
+      display: inline-block;
+      width: 4.0em;
+      height: 4.0em;
+      border-radius: 5px;
+      background-color: $color-primary;
+      opacity: 0.6;
+      margin: .5em;
+    }
+
+    .socicon-hidden {
+      display: none;
+    }
+
+    a {
+      i {
+        width: auto;
+        color: $color-background;
+        font-size: 3.0em;
+        text-align: center;
+        padding-top: .2em;
+      }
+    }
   }
 }
