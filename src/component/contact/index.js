@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import * as util from '../../lib/util.js';
 import * as route from '../../actions/route.js';
 import './contact.scss';
+import PRXlogo from '../../assets/PRXlogo.png';
 
 import Navbar from '../navbar';
 import Navbutton from '../navbutton';
@@ -19,17 +20,21 @@ class Contact extends React.Component {
         <h1> Want to Hire Me? </h1>
         <div id='contact-info-block'>
           <p> katy@katysewall.com </p>
-          <p> 206.457.7205 </p>
         </div>
         <ul className="soc">
-          <li>
-            <a href='https://facebook.com/katysewall'>
-              <i className="socicon-facebook" aria-hidden="true"></i>
+          <li className='prx-logo'>
+            <a href='https://www.prx.org/users/25002-gapesto'>
+              <img className='socicon-prx' src={PRXlogo}></img>
             </a>
           </li>
           <li>
             <a href='https://soundcloud.com/katysewall'>
               <i className="socicon-soundcloud" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href='https://facebook.com/katysewall'>
+              <i className="socicon-facebook" aria-hidden="true"></i>
             </a>
           </li>
           <li>

@@ -56,11 +56,20 @@
       margin: .5em;
     }
 
+    .prx-logo {
+      transform: translateY(1.1em);
+    }
+
     .socicon-hidden {
       display: none;
     }
 
     a {
+      img {
+        width: 4.0em;
+        height: 4.0em;
+      }
+
       i {
         width: auto;
         color: $color-background;
