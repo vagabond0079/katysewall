@@ -1,0 +1,40 @@
+@import '../../style/_vars.scss';
+
+#contact-page {
+  height: 100vh;
+
+  #contact-page-buffer-top{
+    height: 10vh;
+  }
+  h1 {
+    font-family: 'TallDeco';
+    font-size: 12vh;
+    padding-left: 20vw;
+    padding-right: 30vw;
+    padding-top: 5vw;
+    text-shadow: 1px 2px 1px $color-border;
+  }
+
+  p {
+    font-family: 'EastMarket';
+    width: auto;
+    margin: 0 auto;
+    padding: $pad * 0.5;
+    font-size: 2em;
+    opacity: 0.6;
+    line-height: 1em;
+  }
+
+  #contact-info-block {
+    display: inline-block;
+    width: auto;
+    margin-top: 5vh;
+    margin-right: 10vw;
+    float: right;
+  }
+
+  .navbutton {
+    width: 100%;
+    margin-top: -10vh;
+  }
+}
