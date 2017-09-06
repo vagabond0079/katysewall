@@ -12,11 +12,12 @@ class About extends React.Component {
   constructor(props){
     super(props);
 
-    this.handleClick = this.handleClick.bind(this);
+    this.handleHomeClick = this.handleHomeClick.bind(this);
   }
 
-  handleClick(event){
-    this.props.goToHome();
+  handleHomeClick(event){
+    let el = document.getElementById('landing');
+    el.scrollIntoView(true);
   }
 
   render() {
@@ -36,8 +37,8 @@ class About extends React.Component {
           Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage. Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut. Sea lettuce gumbo grape kale kombu cauliflower salsify kohlrabi okra sea lettuce broccoli celery lotus root carrot winter purslane turnip greens garlic. JÃ­cama garlic courgette coriander radicchio plantain scallion cauliflower fava bean desert raisin spring onion chicory bunya nuts. Sea lettuce water spinach gram fava bean leek dandelion silver beet eggplant bush tomato.
         </p>
         <Navbutton
-          buttonText='Home'
-          handleClick={this.handleClick}
+          buttonText='Top'
+          handleClick={this.handleHomeClick}
         />
       </section>
     );

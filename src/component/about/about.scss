@@ -5,6 +5,7 @@
     height: 15vh;
   }
   h1 {
+    font-family: $font-menu;
     font-size: 3.6em;
     text-align: center;
     margin: 0 auto;
@@ -30,9 +31,17 @@
   }
 
   p {
-    width: 90vw;
+    font-family: 'Gill Sans';
+    font-weight: lighter;
+    width: 85vw;
     margin: 0 auto;
     padding: $pad;
     font-size: 2em;
+    opacity: 0.9;
+    line-height: 1.8em;
+  }
+
+  .navbutton {
+    width: 100%;
   }
 }
