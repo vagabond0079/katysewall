@@ -1,6 +1,9 @@
 {
   "name": "Katy-Sewall-Portfolio",
   "version": "1.0.0",
+  "engines": {
+    "node": "8.4.0"
+  },
   "main": "index.js",
   "scripts": {
     "lint": "eslint . --fix",
