@@ -11,11 +11,12 @@ class Work extends React.Component {
   constructor(props){
     super(props);
 
-    this.handleClick = this.handleClick.bind(this);
+    this.handleHomeClick = this.handleHomeClick.bind(this);
   }
 
-  handleClick(event){
-    this.props.goToHome();
+  handleHomeClick(event){
+    let el = document.getElementById('landing');
+    el.scrollIntoView(true);
   }
 
   render() {
@@ -35,8 +36,8 @@ class Work extends React.Component {
         <hr/>
         <p> Celery potato scallion desert raisin horseradish spinach carrot soko.  </p>
         <Navbutton
-          buttonText='Home'
-          handleClick={this.handleClick}
+          buttonText='Top'
+          handleClick={this.handleHomeClick}
         />
       </section>
     );
