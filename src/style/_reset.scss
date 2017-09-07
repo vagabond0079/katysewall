@@ -33,3 +33,7 @@ form *:focus {
   border: none;
   outline: none;
 }
+
+title, script {
+  display: none;
+}
